@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/551px-Netflix_2015_N_logo.svg.png"
+    />
+    <!-- <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="./css/min.css" />
+    <title>Netflix</title>
+  </head>
+
+  <body>
+    <!-- site header nav start -->
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__wrapper">
+          <a class="site-header__logo__link" href="./index.html"
+            ><img
+              class="site-header__logo-img"
+              src="./images/Netflix_2015_logo.svg"
+              alt="Netflix"
+          /></a>
+          <div class="site-header__box">
+            <button class="site-header__button" type="button">
+              <img
+                src="./images/icon/menu-bar.png"
+                width="40"
+                height="40"
+                alt="menu-bar"
+              />
+            </button>
+            <form
+              class="site-header__form"
+              action="https://echo.htmlacademy.ru/"
+              method="POST"
+              autocomplete="off"
+            >
+              <div class="site-header__select-box">
+                <select
+                  class="site-header__select"
+                  name="countries-list"
+                  aria-label="countries"
+                >
+                  <option value="English">English</option>
+                  <option value="Русский">Русский</option>
+                  <option value="O'zbek">O'zbek</option>
+                </select>
+              </div>
+            </form>
+            <a class="site-header__link" href="#">Log in</a>
+            <a class="site-header__link" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- site header nav finish -->
+    <!-- site main start  -->
+    <main class="site-main">
+      <h1 class="visually-hidden">Netflix</h1>
+      <!-- site hero start  -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <form class="hero__form">
+              <select
+                class="hero__select"
+                name="search_select"
+                aria-label="select"
+              ></select>
+              <input
+                class="hero__input"
+                type="search"
+                placeholder="Movies search..."
+                aria-label="Movies search..."
+              />
+              <button class="hero__btn" type="submit">submit</button>
+            </form>
+            <h2 class="visually-hidden">Netflix movies</h2>
+            <ul class="hero__list"></ul>
+          </div>
+        </div>
+      </section>
+      <!-- site hero finish  -->
+    </main>
+    <!-- site main finish  -->
+    <!-- <div class="body-box"></div> -->
+
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
